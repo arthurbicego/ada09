@@ -8,10 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
-        .justify-content-between-end {
-            justify-content: space-between;
-            align-items: flex-end;
-        }
     </style>
 </head>
 
@@ -48,8 +44,9 @@
                 </div>
             </div>
             <div class="container">
-                <button type="button" class="btn btn-secondary"><a class="text-decoration-none text-white"
-                        href="#">Album</a></button>
+                <h6>
+                    <a class="text-decoration-none link-opacity-50-hover" href="#">Album</a>
+                </h6>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -79,12 +76,42 @@
 
 
         <section class="bg-body-secondary">
-            <div class="container d-flex justify-content-between">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 py-3">
+            <div class="container">
+                <div class="row row-cols-auto py-3 d-flex justify-content-between">
+
                     <!-- Cards Start-->
-                    <div class="col">
-                        <div class="card shadow" style="width: 22rem;">
-                            <img src="./assets/image001.jpg" class="card-img-top" alt="...">
+                    <!-- Cards 1 Start-->
+                    <div class="col-4 my-3">
+                        <div class="card shadow">
+                            <img src="./assets/arena.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CBW - Arena da Baixada</h5>
+                                <p class="card-text">Stadium Joaquim Américo Guimarães, known commonly as Arena da
+                                    Baixada, is the home stadium of Club Athletico Paranaense, and has a capacity of
+                                    42,372 people.
+                                    <br>
+                                    <br>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="col fs-6 text-body-secondary lead text-end">
+                                        <p>December 18, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cards 1 end -->
+
+                    <!-- Cards 2 Start-->
+                    <div class="col-4 my-3">
+                        <div class="card shadow">
+                            <img src="./assets/opera.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">CBW - Ópera de Arame</h5>
                                 <p class="card-text">Brazilian theater, its name (Wire Opera House) derives from the
@@ -105,37 +132,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow" style="width: 22rem;">
-                            <img src="./assets/image002.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">CBW - Arena da Baixada</h5>
-                                <p class="card-text">Stadium Joaquim Américo Guimarães, known commonly as Arena da
-                                    Baixada, is the home stadium of Club Athletico Paranaense, and has a capacity of
-                                    42,372 people.</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                            <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                        </div>
-                                    </div>
-                                    <div class="col fs-6 text-body-secondary lead text-end">
-                                        <p>December 18, 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow" style="width: 22rem;">
-                            <img src="./assets/image003.jpg" class="card-img-top" alt="...">
+                    <!-- Card 2 end -->
+
+                    <!-- Card 3 Start-->
+                    <div class="col-4 my-3">
+                        <div class="card shadow">
+                            <img src="./assets/jardim.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">CBW - Jardim Botânico</h5>
                                 <p class="card-text">Jardim Botânico de Curitiba (Botanical Garden of Curitiba) is a
                                     park located in the capital of the state of Paraná. It is the major tourist
                                     attraction and landmark of the city, and it houses part of the campus of the Federal
-                                    University of Paraná.</p>
+                                    University of Paraná.
+                                </p>
                                 <div class="row">
                                     <div class="col">
                                         <div class="btn-group">
@@ -150,6 +159,63 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card 3 end -->
+
+
+                    <!-- Card 4 Start-->
+                    <div class="col-4 my-3">
+                        <div class="card shadow">
+                            <img src="./assets/olho.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CBW - Oscar Niemeyer Museum</h5>
+                                <p class="card-text">It was reinaugurated on July 8, 2003, with the current denomination
+                                    to honor its famous architect who completed this project at 95 years of age, Oscar
+                                    Niemeyer. It is also known as Museu do Olho (Eye Museum), due to the design of the
+                                    main building.
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="col fs-6 text-body-secondary lead text-end">
+                                        <p>December 17, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 end -->
+
+                    <!-- Card 5 Start-->
+                    <div class="col-4 my-3">
+                        <div class="card shadow">
+                            <img src="./assets/university.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CBW - Free University of the Environment</h5>
+                                <p class="card-text">It is a Non-Governmental Organization which is located in a large green area, in Bosque
+                                    Zaninelli. On site there is a large stone wall and some lakes, originating from the
+                                    period in which granite was explored at the site.
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="col fs-6 text-body-secondary lead text-end">
+                                        <p>December 17, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 end -->
+
+
                     <!-- Cards end -->
                 </div>
             </div>
@@ -161,17 +227,18 @@
     <footer>
         <div class="container py-3">
             <div class="row">
-                <div class="col-8">
-                    <p>This site is the exclusive property of Arthur Bicego Quintaneira.<br>
+                <div class="col-8 fs-6 text-body-secondary">
+                    <p>Copyright 2023 - All rights reserved. | This site is the exclusive property of Arthur Bicego
+                        Quintaneira.<br>
                         If necessary, contact me at <a class="text-decoration-none"
                             href="mailto:arthur.bicego@gmail.com">arthur.bicego@gmail.com</a>.
                         Visit my github at <a class="text-decoration-none"
                             href="https://github.com/arthurbicego">github.com/arthurbicego</a>.
                     </p>
                 </div>
-                <div class="col">
+                <div class="col align-self-center">
                     <p class="float-end">
-                        <a class="text-decoration-none" href="#">Voltar ao topo</a>
+                        <a class="text-decoration-none" href="#">Go to top</a>
                     </p>
                 </div>
             </div>
